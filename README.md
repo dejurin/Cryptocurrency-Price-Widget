@@ -1,7 +1,5 @@
 <h1 align="center">Cryptocurrency Price Widget</h1>
 
-![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled&query=count&colorB=green)
-
 Customizable Cryptocurrency Price Widget with ⚡real-time price update and flexible settings.
 
 ![Real-time streaming price update](./streaming.gif "Real-time streaming price update")
@@ -26,6 +24,8 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [x] SEO-friendly.
 
 ### Installation ###
+![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled&query=count&colorB=green)
+
 Go to the __[website](https://co-in.io/)__ to generate a custom widget script
 You can see __[examples](https://co-in.io/examples.html)__.
 
