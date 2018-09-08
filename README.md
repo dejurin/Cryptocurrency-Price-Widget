@@ -34,8 +34,8 @@ Go to the __[website](https://co-in.io/crypto-price-widget)__ for generate a cus
 You can see __[examples](https://co-in.io/examples.html)__.
 
 ### Options ###
-- __Select vertical__ — basically it's fiat currency, but you can choose cryptocurrency;
-- __Select horizontal__ — basically it's cryptocurrency, but you can choose fiat currency;
+- __Select horizontal__ — basically it's fiat currency, but you can choose cryptocurrency;
+- __Select vertical__ — basically it's cryptocurrency, but you can choose fiat currency;
 - __Color__ — color of block widget;
 - __Streaming data__ — prices are updated by the flow 🌧️ in real-time;
 - __Striped__ — striped line;
