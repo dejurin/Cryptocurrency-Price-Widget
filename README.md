@@ -14,13 +14,13 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [License](#license)
 
 ### Features ###
-- [x] Pure JavaScript ~ __8.4__ kBytes (gzip), no dependencies;
+- [x] Pure JavaScript ~ __9.9__ kBytes (gzip), no dependencies;
 - [x] Flexible settings and customizable design;
 - [x] Real-time ⚡streaming price update;
 - [x] Processed on a third-party server;
 - [x] 2,966 cryptocurrencies and 162 fiat currencies;
 - [x] SSL support;
-- [x] IE10+ support;
+- [x] IE9+ support;
 - [x] SEO-friendly.
 
 ### Installation ###
