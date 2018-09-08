@@ -20,7 +20,7 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [x] Processed on a third-party server;
 - [x] 2,966 cryptocurrencies and 162 fiat currencies;
 - [x] SSL support;
-- [x] IE9+ support;
+- [x] IE10+ support;
 - [x] SEO-friendly.
 
 ### Installation ###
