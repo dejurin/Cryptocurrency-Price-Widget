@@ -1,6 +1,6 @@
 <h1 align="center">Cryptocurrency Price Widget</h1>
 
-Customizable Cryptocurrency Price Widget with ⚡real-time price update and flexible settings.
+Customizable __[Cryptocurrency Price Widget](https://co-in.io/crypto-price-widget)__ with ⚡real-time price update and flexible settings.
 
 ![Real-time streaming price update](./streaming.gif "Real-time streaming price update")
 ![Tabs, show graph with marketcap](./tab.gif "Tabs, show graph with marketcap")
