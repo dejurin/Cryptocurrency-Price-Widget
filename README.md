@@ -57,6 +57,9 @@ On the Internet, there are cases when after installing a script or widget your c
 
 Tools for checking: [Check browser](https://cryptojackingtest.com/), [Scanner Magento](https://github.com/gwillem/magento-malware-scanner)
 
+### Support ###
+If you need help or other issues, contact: [s@co-in.io](mailto:s@co-in.io)
+
 ### License ###
 This widget is distributed under [MIT](https://choosealicense.com/licenses/mit/) license.
 *You can use this widget for free on your sites. Nevertheless, due to the fact that we take on all the workload (third-party server), we need to pay for the equipment and we would like to receive from you, something in replacement, for example, DO NOT delete the backlink in the widget.*
