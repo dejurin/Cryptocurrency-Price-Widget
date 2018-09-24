@@ -14,12 +14,13 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [License](#license)
 
 ### Features ###
+- [x] No Cryptojacking!
 - [x] Pure JavaScript ~ __9.8__ kBytes (gzip), no dependencies;
 - [x] Flexible settings and customizable design;
 - [x] Real-time ⚡streaming price update;
 - [x] Processed on a third-party server;
 - [x] 3,072 cryptocurrencies and 162 fiat currencies;
-- [x] Multi-language: English, Русский, Español;
+- [x] Multilingual support: English, Русский, Español;
 - [x] SSL support;
 - [x] IE9+ support;
 - [x] SEO-friendly.
@@ -48,6 +49,13 @@ You can see __[examples](https://co-in.io/examples.html)__.
 ### FAQ ###
   1. - __Q.__ How to make fixed width?
      - __A.__ Make div tag with style width and insert widget script inside. Try to keep the width at least 220px.
+     
+### We are not supported Cryptojacking !###
+*What is cryptojacking? Hijacked your personal device to make use of its CPU power to mine cryptocurrencies.*
+
+On the Internet, there are cases when after installing a script or widget your computer starts to mining. We are ot supported CryptojackingYou can see this, check our website or javascript code.
+
+Tools for checking: [Check browser](https://cryptojackingtest.com/), [Scanner Magento](https://github.com/gwillem/magento-malware-scanner)
 
 ### License ###
 This widget is distributed under [MIT](https://choosealicense.com/licenses/mit/) license.
