@@ -50,7 +50,7 @@ You can see __[examples](https://co-in.io/examples.html)__.
   1. - __Q.__ How to make fixed width?
      - __A.__ Make div tag with style width and insert widget script inside. Try to keep the width at least 220px.
      
-### We are not supported Cryptojacking !###
+### We are not supported Cryptojacking! ###
 *What is cryptojacking? Hijacked your personal device to make use of its CPU power to mine cryptocurrencies.*
 
 On the Internet, there are cases when after installing a script or widget your computer starts to mining. We are ot supported CryptojackingYou can see this, check our website or javascript code.
