@@ -53,7 +53,7 @@ You can see __[examples](https://co-in.io/examples.html)__.
 ### We are not supported Cryptojacking! ###
 *__What is cryptojacking?__ Hijacked your personal device to make use of its CPU power to mine cryptocurrencies.*
 
-On the Internet, there are cases when after installing a script or widget your computer starts to mining. We are ot supported CryptojackingYou can see this, check our website or javascript code.
+On the Internet, there are cases when after installing a script or widget your computer starts to mining. We are ot supported Cryptojacking. You can see this, check our website or javascript code.
 
 Tools for checking: [Check browser](https://cryptojackingtest.com/), [Scanner Magento](https://github.com/gwillem/magento-malware-scanner)
 
