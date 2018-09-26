@@ -15,7 +15,7 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 
 ### Features ###
 - [x] [No Cryptojacking](#user-content-we-are-not-supported-cryptojacking)!
-- [x] Pure JavaScript ~ __9.8__ kBytes (gzip), no dependencies;
+- [x] Pure JavaScript ~ __9.9__ kBytes (gzip), no dependencies;
 - [x] Flexible settings and customizable design;
 - [x] Real-time ⚡streaming price update;
 - [x] Processed on a third-party server;
