@@ -29,7 +29,7 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 
 ![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled%2Fpricelist%2F&query=count&colorB=brightgreen)
 ![Size](https://img.shields.io/badge/size%20(gzip)-%20~9.9kB-green.svg)
-![Version](https://img.shields.io/badge/Cryptocurrency--Price--Widget-v1.0.1-orange.svg)
+![Version](https://img.shields.io/badge/Cryptocurrency--Price--Widget-v1.1-orange.svg)
 
 Go to the __[website](https://co-in.io/crypto-price-widget)__ for generate a custom widget script
 You can see __[examples](https://co-in.io/examples.html)__.
