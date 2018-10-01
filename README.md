@@ -1,8 +1,6 @@
 <h1 align="center">Cryptocurrency Price Widget</h1>
 
-![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled&query=count&colorB=green)
-
-Customizable Cryptocurrency Price Widget with ⚡real-time price update and flexible settings.
+Customizable __[Cryptocurrency Price Widget](https://co-in.io/crypto-price-widget)__ with ⚡real-time price update and flexible settings.
 
 ![Real-time streaming price update](./streaming.gif "Real-time streaming price update")
 ![Tabs, show graph with marketcap](./tab.gif "Tabs, show graph with marketcap")
@@ -16,22 +14,29 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [License](#license)
 
 ### Features ###
-- [x] Pure JavaScript ~ __8.4__ kBytes (gzip), no dependencies;
+- [x] [No Cryptojacking](#user-content-we-are-not-supported-cryptojacking)!
+- [x] Pure JavaScript ~ __9.9__ kBytes (gzip), no dependencies;
 - [x] Flexible settings and customizable design;
 - [x] Real-time ⚡streaming price update;
 - [x] Processed on a third-party server;
-- [x] 2,966 cryptocurrencies and 162 fiat currencies;
+- [x] 3,072 cryptocurrencies and 162 fiat currencies;
+- [x] Multilingual support: English, Русский, Español;
 - [x] SSL support;
 - [x] IE9+ support;
 - [x] SEO-friendly.
 
 ### Installation ###
-Go to the __[website](https://co-in.io/)__ to generate a custom widget script
+
+![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled%2Fpricelist%2F&query=count&colorB=brightgreen)
+![Size](https://img.shields.io/badge/size%20(gzip)-%20~9.9kB-green.svg)
+![Version](https://img.shields.io/badge/Cryptocurrency--Price--Widget-v1.1-orange.svg)
+
+Go to the __[website](https://co-in.io/crypto-price-widget)__ for generate a custom widget script
 You can see __[examples](https://co-in.io/examples.html)__.
 
 ### Options ###
-- __Select vertical__ — basically it's fiat currency, but you can choose cryptocurrency;
-- __Select horizontal__ — basically it's cryptocurrency, but you can choose fiat currency;
+- __Select horizontal__ — basically it's fiat currency, but you can choose cryptocurrency;
+- __Select vertical__ — basically it's cryptocurrency, but you can choose fiat currency;
 - __Color__ — color of block widget;
 - __Streaming data__ — prices are updated by the flow 🌧️ in real-time;
 - __Striped__ — striped line;
@@ -43,6 +48,16 @@ You can see __[examples](https://co-in.io/examples.html)__.
 ### FAQ ###
   1. - __Q.__ How to make fixed width?
      - __A.__ Make div tag with style width and insert widget script inside. Try to keep the width at least 220px.
+     
+### We are not supported Cryptojacking! ###
+*__What is cryptojacking?__ Hijacked your personal device to make use of its CPU power to mine cryptocurrencies.*
+
+On the Internet, there are cases when after installing a script or widget your computer starts to mining. We are ot supported Cryptojacking. You can see this, check our website or javascript code.
+
+Tools for checking: [Check browser](https://cryptojackingtest.com/), [Scanner Magento](https://github.com/gwillem/magento-malware-scanner)
+
+### Support ###
+If you need help or other issues, contact: [s@co-in.io](mailto:s@co-in.io)
 
 ### License ###
 This widget is distributed under [MIT](https://choosealicense.com/licenses/mit/) license.
