@@ -2,8 +2,7 @@
 
 Customizable __[Cryptocurrency Price Widget](https://co-in.io/crypto-price-widget)__ with ⚡real-time price update and flexible settings.
 
-![Real-time streaming price update](./streaming.gif "Real-time streaming price update")
-![Tabs, show graph with marketcap](./tab.gif "Tabs, show graph with marketcap")
+![Real-time streaming price update](./Cryptocurrency-Price-Widget.gif "Real-time streaming price update")
 
 ### Why use Cryptocurrency Price Widget? ###
 Does not consume resources of your site, written in pure JavaScript. Calculations and data are processed on a third-party server. Real-time streaming price update and flexible settings — it's looks like amazing and beautiful.
