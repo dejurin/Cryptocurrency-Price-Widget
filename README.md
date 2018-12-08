@@ -19,7 +19,7 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [x] Flexible settings and customizable design;
 - [x] Real-time ⚡streaming price update;
 - [x] Processed on a third-party server;
-- [x] 3,151 cryptocurrencies and 162 fiat currencies;
+- [x] 3,361 cryptocurrencies and 162 fiat currencies;
 - [x] Multilingual support: English, Русский, Español;
 - [x] SSL support;
 - [x] IE9+ support;
