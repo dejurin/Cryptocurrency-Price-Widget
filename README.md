@@ -11,6 +11,7 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [Features](#features)
 - [Installation](#installation)
 - [FAQ](#faq)
+- [Video](#video)
 - [License](#license)
 
 ### Features ###
@@ -57,6 +58,10 @@ __[WordPress plugin](https://wordpress.org/plugins/cryptocurrency-price-widget/)
 On the Internet, there are cases when after installing a script or widget your computer starts to mining. We are ot supported Cryptojacking. You can see this, check our website or javascript code.
 
 Tools for checking: [Check browser](https://cryptojackingtest.com/), [Scanner Magento](https://github.com/gwillem/magento-malware-scanner)
+
+### Video ###
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/nz_HdajmqPU/0.jpg)](http://www.youtube.com/watch?v=nz_HdajmqPU)
 
 ### Support ###
 If you need help or other issues, contact: [s@co-in.io](mailto:s@co-in.io)
