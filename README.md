@@ -37,6 +37,11 @@ You can see __[examples](https://codepen.io/currencyrate_today/pen/dqwXYR)__.
 
 __[WordPress plugin](https://wordpress.org/plugins/cryptocurrency-price-widget/)__
 
+![WordPress Plugin Active Installs](https://img.shields.io/wordpress/plugin/installs/cryptocurrency-price-widget?label=WordPress%20Active%20Installs)
+![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dd/cryptocurrency-price-widget?label=WordPress%20Downloads)
+![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dw/cryptocurrency-price-widget?label=WordPress%20Downloads)
+![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dm/cryptocurrency-price-widget?label=WordPress%20Downloads)
+
 ### Options ###
 - __Select horizontal__ — basically it's fiat currency, but you can choose cryptocurrency;
 - __Select vertical__ — basically it's cryptocurrency, but you can choose fiat currency;
