@@ -26,6 +26,14 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 - [x] IE9+ support;
 - [x] SEO-friendly.
 
+### Language support ###
+- English
+- Português
+- Español
+- Deutsch
+- Français
+- Русский
+
 ### Installation ###
 
 ![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled%2Fpricelist%2F&query=count&colorB=brightgreen)
