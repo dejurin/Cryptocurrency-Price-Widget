@@ -39,7 +39,7 @@ Does not consume resources of your site, written in pure JavaScript. Calculation
 ![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled%2Fpricelist%2F&query=count&colorB=brightgreen)
 ![Size](https://img.shields.io/badge/size%20(gzip)-%20~9.9kB-green.svg)
 ![Version](https://img.shields.io/badge/Cryptocurrency--Price--Widget-v1.1.2-orange.svg)
-![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/cryptocurrency-price-widget?label=WordPress&logo=wordpress)
+[![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/cryptocurrency-price-widget?label=WordPress&logo=wordpress)](https://wordpress.org/plugins/cryptocurrency-price-widget/)
 
 Go to the __[website](https://co-in.io/crypto-price-widget)__ for generate a custom widget script
 You can see __[examples](https://codepen.io/currencyrate_today/pen/dqwXYR)__.
