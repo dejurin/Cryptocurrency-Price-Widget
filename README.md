@@ -2,6 +2,12 @@
 
 Customizable __[Cryptocurrency Price Widget](https://co-in.io/crypto-price-widget/)__ with ⚡real-time price update and flexible settings.
 
+---
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/deyurii)
+
+---
+
 ![Real-time streaming price update](./cryptocurrency-price-widget-anim.gif "Real-time streaming price update")
 
 ### Why use Cryptocurrency Price Widget? ###
