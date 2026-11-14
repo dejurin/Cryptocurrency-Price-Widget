@@ -1,6 +1,6 @@
 # Cryptocurrency Price Widget
 
-> **1.5.0-rc.1 — development candidate, not deployed.** This development branch documents the accepted local candidate. Links and embed examples below still use the existing production service. An isolated hosted development environment has not been published yet.
+> **1.5.0-rc.1 — development preview.** Try the isolated [dev site](https://dev.co-in.io/) and [dev widget builder](https://dev.co-in.io/crypto-price-widget/) in all 14 languages. The builder generates dev embed URLs. Existing production widgets are unchanged; the examples below continue to use the production service.
 
 Add cryptocurrency prices to your website, choose coins and display currencies, and match the widget to your design. **No registration or API key required.**
 
@@ -59,7 +59,7 @@ See [embed examples](examples.html) or the [WordPress plugin](https://wordpress.
 <!-- /Cryptocurrency Price Widget -->
 ```
 
-The example continues to use the production URL. Do not change it to an unverified development hostname or path.
+The example continues to use the production URL. For RC testing, generate a separate embed with the [dev builder](https://dev.co-in.io/crypto-price-widget/).
 
 ## Options
 
@@ -75,7 +75,7 @@ The example continues to use the production URL. Do not change it to an unverifi
 
 ## Languages in 1.5.0-rc.1
 
-English (`en`), Ukrainian (`uk`), Russian (`ru`), German (`de`), Spanish (`es`), French (`fr`), Portuguese (`pt`), Polish (`pl`), Italian (`it`), Turkish (`tr`), Dutch (`nl`), Japanese (`ja`), Korean (`ko`) and simplified Chinese (`zh-cn`). English uses the root URL; other languages use their locale prefix. Newly added locale routes are part of the candidate and are pending hosted deployment.
+English (`en`), Ukrainian (`uk`), Russian (`ru`), German (`de`), Spanish (`es`), French (`fr`), Portuguese (`pt`), Polish (`pl`), Italian (`it`), Turkish (`tr`), Dutch (`nl`), Japanese (`ja`), Korean (`ko`) and simplified Chinese (`zh-cn`). English uses the root URL; other languages use their locale prefix. All 14 locale routes are available on dev.co-in.io. This does not add or change routes on the production service.
 
 ## Data sources and update behavior
 
