@@ -1,96 +1,30 @@
 # Cryptocurrency Price Widget
 
-<p align="center">
-  Customizable <a href="https://co-in.io/crypto-price-widget/"><strong>Cryptocurrency Price Widget</strong></a> with ⚡ real-time price updates and flexible settings.
-</p>
+> **1.5.0-rc.1 — development candidate, not deployed.** This development branch documents the accepted local candidate. Links and embed examples below still use the existing production service. An isolated hosted development environment has not been published yet.
 
----
+Add cryptocurrency prices to your website, choose coins and display currencies, and match the widget to your design. **No registration or API key required.**
 
-<p align="center">
-  <a href="https://buymeacoffee.com/deyurii">
-    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
-  </a>
-</p>
-
----
-
-![Real-time streaming price update](./cryptocurrency-price-widget-anim.gif "Real-time streaming price update")
-
-## Why use Cryptocurrency Price Widget?
-
-Cryptocurrency Price Widget is a lightweight embeddable widget written in pure JavaScript. It does not consume your website server resources for market data calculations.
-
-Crypto prices are delivered by public market data providers, while fiat cross-rates are handled separately. The widget is designed to show prices reliably, with minimal requests, no API keys in browser code, and graceful fallback behavior if a provider is temporarily unavailable.
-
-* **[WordPress plugin](https://wordpress.org/plugins/cryptocurrency-price-widget/)**
-* [Features](#features)
-* [Data sources](#data-sources)
-* [Installation](#installation)
-* [Options](#options)
-* [FAQ](#faq)
-* [Video](#video)
-* [License](#license)
+![Cryptocurrency Price Widget](./cryptocurrency-price-widget-anim.gif)
 
 ## Features
 
-* [x] [No cryptojacking](#we-do-not-support-cryptojacking)
-* [x] Pure JavaScript, no dependencies
-* [x] Flexible settings and customizable design
-* [x] Real-time ⚡ streaming price updates
-* [x] ≈ **14,280 crypto assets** and **162 fiat currencies**
-* [x] Public asset list: [`https://co-in.io/data/crypto-assets.json`](https://co-in.io/data/crypto-assets.json)
-* [x] Multilingual support
-* [x] SSL support
-* [x] SEO-friendly embed output
-* [x] WordPress plugin support
-
-## Data sources
-
-The current runtime uses:
-
-* **Crypto prices:** CoinLore public ticker API
-* **Fiat cross-rates:** MoneyConvert CDN
-* **Widget runtime:** `https://co-in.io/widget/pricelist.js`
-* **Supported assets JSON:** `https://co-in.io/data/crypto-assets.json`
-
-The widget focuses on stable price delivery, not provider comparison.
-
-The public asset list currently exposes unique symbol-based crypto assets supported by the widget runtime. Some market data providers may list multiple coins with the same symbol; the widget keeps a canonical symbol-based list for backward compatibility with existing embed codes such as:
-
-```txt
-items=BTC,ETH,DOGE
-```
-
-## Language support
-
-* English
-* Português
-* Español
-* Deutsch
-* Français
-* Українська
-* Русский
+- Cryptocurrency prices with automatic updates where supported.
+- Currency tabs, custom backgrounds, striped rows, borders and rounded corners.
+- Adaptive text contrast and keyboard controls for tabs and details.
+- A Live button that pauses displayed updates for each widget independently.
+- A one-shot mode for a single price snapshot.
+- Responsive layout and loading indicators that reserve space for prices.
+- Multiple widgets and compatibility with existing embed codes.
+- Fourteen interface languages in the release candidate.
+- Free use under the MIT license; no cryptocurrency mining.
 
 ## Installation
 
-![Installed](https://img.shields.io/badge/dynamic/json.svg?label=Installed\&url=https%3A%2F%2Fco-in.io%2Fapi%2Fcount%2Finstalled%2Fpricelist%2F\&query=count\&colorB=brightgreen)
-![Version](https://img.shields.io/badge/Cryptocurrency--Price--Widget-v1.4.0-orange.svg)
-[![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/cryptocurrency-price-widget?label=WordPress\&logo=wordpress)](https://wordpress.org/plugins/cryptocurrency-price-widget/)
+Use the [widget builder](https://co-in.io/crypto-price-widget/) to choose settings and copy the code into an HTML block that permits JavaScript. The hosted builder currently serves the existing production version.
 
-Go to the **[website](https://co-in.io/crypto-price-widget/)** to generate a custom widget script.
+See [embed examples](examples.html) or the [WordPress plugin](https://wordpress.org/plugins/cryptocurrency-price-widget/). The plugin has its own release number; 1.5.0-rc.1 here refers to the hosted widget candidate.
 
-You can also see **[examples](https://codepen.io/currencyrate_today/pen/dqwXYR)**.
-
-### WordPress plugin
-
-**[Cryptocurrency Price Widget for WordPress](https://wordpress.org/plugins/cryptocurrency-price-widget/)**
-
-![WordPress Plugin Active Installs](https://img.shields.io/wordpress/plugin/installs/cryptocurrency-price-widget?label=WordPress%20Active%20Installs)
-![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dd/cryptocurrency-price-widget?label=WordPress%20Downloads)
-![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dw/cryptocurrency-price-widget?label=WordPress%20Downloads)
-![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dm/cryptocurrency-price-widget?label=WordPress%20Downloads)
-
-## Basic embed example
+### Basic embed example
 
 ```html
 <!-- Cryptocurrency Price Widget -->
@@ -125,73 +59,73 @@ You can also see **[examples](https://codepen.io/currencyrate_today/pen/dqwXYR)*
 <!-- /Cryptocurrency Price Widget -->
 ```
 
+The example continues to use the production URL. Do not change it to an unverified development hostname or path.
+
 ## Options
 
-* **Select horizontal** — fiat currencies by default, but crypto assets can also be selected
-* **Select vertical** — crypto assets by default, but fiat currencies can also be selected
-* **Color** — widget background color
-* **Streaming data** — prices update automatically in real time
-* **Striped** — striped rows
-* **Rounded** — rounded widget corners
-* **Shadow** — widget shadow
-* **Border** — widget border
-* **Widget script** — ready-to-use embed code
+| Setting | Purpose |
+| --- | --- |
+| Display currencies | Fiat currencies shown in tabs |
+| Cryptocurrencies | Coins shown in rows |
+| Background color | Widget background and adaptive palette |
+| Automatic updates | Enable updates, or disable for one snapshot |
+| Striped rows | Alternate row backgrounds |
+| Rounded corners | Round the widget edges |
+| Shadow and border | Optional frame styling |
+
+## Languages in 1.5.0-rc.1
+
+English (`en`), Ukrainian (`uk`), Russian (`ru`), German (`de`), Spanish (`es`), French (`fr`), Portuguese (`pt`), Polish (`pl`), Italian (`it`), Turkish (`tr`), Dutch (`nl`), Japanese (`ja`), Korean (`ko`) and simplified Chinese (`zh-cn`). English uses the root URL; other languages use their locale prefix. Newly added locale routes are part of the candidate and are pending hosted deployment.
+
+## Data sources and update behavior
+
+- **Kraken:** quotes for verified supported markets.
+- **CoinLore:** initial or alternative prices, market capitalization and volume.
+- **MoneyConvert:** fiat exchange rates.
+- **CryptoCompare:** separate charts in USD.
+
+Kraken streaming prices take priority where supported. If streaming fails, valid CoinLore data is used before Kraken REST. Litecoin uses Kraken because its known incorrect CoinLore mapping is excluded. Quote availability varies by asset; the [asset catalog](https://co-in.io/data/crypto-assets.json) is metadata, not a guarantee of an available price.
+
+Updates depend on provider events and availability, with no fixed trade-update interval. `streaming: "0"` loads one snapshot without starting polling. The Live button pauses display updates; provider connections continue.
+
+In the candidate, a price older than two minutes triggers streaming revalidation without hiding a valid displayed value. Exchange rates refresh separately after 30 minutes. A failed FX refresh retains the last valid snapshot and its original receipt time, shown in a tooltip. Receipt time is not market trade time.
+
+Rows and icons appear while prices are loading. If all price attempts fail, a localized message is shown; unavailable FX affects the corresponding currency tab. Charts remain independent of price and metric availability.
+
+This repository contains documentation and embed examples. Runtime is hosted by CO-IN.IO; existing embeds receive hosted updates subject to browser and CDN caching.
 
 ## FAQ
 
-### How do I make the widget fixed width?
+### How can I set the width?
 
-Wrap the widget script in a container with a fixed width.
-
-Example:
+Place the embed inside a container, for example:
 
 ```html
-<div style="width: 320px;">
-  <!-- Insert widget script here -->
+<div style="width: 320px; max-width: 100%;">
+  <!-- Insert widget script here. -->
 </div>
 ```
 
-Try to keep the width at least `220px`.
+Allow enough room for your selected currencies and values. At narrow widths, long prices use smaller text; check the result within your page layout.
 
-### Will it slow down my site?
+### Will the widget affect page performance?
 
-No. Your WordPress server or website backend does not perform market data calculations. The widget is loaded as a client-side JavaScript embed, and market data is delivered by external market data providers.
+The widget loads JavaScript, images and market data in the visitor's browser. Check page performance with the number of widgets and coins you intend to display.
 
-### Do I need an API key?
+### Does it mine cryptocurrency?
 
-No. The public widget runtime does not require you to add an API key.
+No. The widget does not use visitors' devices to mine cryptocurrency.
 
-### What happens if a provider is temporarily unavailable?
+### Do I need an account or API key?
 
-The widget is designed to fail gracefully. It uses request timeouts and fallback behavior instead of blocking your page.
-
-## We do not support cryptojacking
-
-**What is cryptojacking?** Cryptojacking is the unauthorized use of a visitor’s device CPU power to mine cryptocurrencies.
-
-There are cases on the Internet where installing a script or widget causes a computer to start mining. Cryptocurrency Price Widget does not support cryptojacking.
-
-You can inspect the website and JavaScript code yourself.
-
-Tools for checking:
-
-* [Check browser](https://cryptojackingtest.com/)
-* [Magento malware scanner](https://github.com/gwillem/magento-malware-scanner)
-
-## Video
-
-[![Cryptocurrency Price Widget video](http://img.youtube.com/vi/nz_HdajmqPU/0.jpg)](http://www.youtube.com/watch?v=nz_HdajmqPU)
+No registration or API key is required to embed the widget.
 
 ## Support
 
-If you need help or have other issues, contact: [s@co-in.io](mailto:s@co-in.io)
+Contact [s@co-in.io](mailto:s@co-in.io).
 
 ## License
 
-This widget is distributed under the [MIT](https://choosealicense.com/licenses/mit/) license.
+Distributed under the [MIT license](https://choosealicense.com/licenses/mit/). You can use the widget for free on your websites.
 
-You can use this widget for free on your websites. Since we handle the infrastructure and maintain the public widget runtime, please keep the backlink in the widget.
-
----
-
-Powered by [CO-IN.IO](https://co-in.io/)
+Powered by [CO-IN.IO](https://co-in.io/).

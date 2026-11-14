@@ -1,6 +1,22 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## 1.5.0-rc.1 — Unreleased
+
+This candidate is accepted locally and has not been deployed. The existing production service already includes the earlier Kraken, PHP parameter-protection and placement fixes. The changes below describe the pending candidate; a development-branch push does not update hosted widgets.
+
+- Retain valid displayed prices during two-minute streaming revalidation; keep one-shot mode free of new polling loops.
+- Preserve the last valid FX snapshot and receipt time when a refresh fails.
+- Validate CoinLore identity for every requested asset and accepted cache entry; isolate individual Kraken pair failures and keep USD independent of FX loading.
+- Expand verified Kraken market coverage while sending only mappings needed by each widget.
+- Restore recognized bare embeds parsed into document head and preserve multiple-instance order.
+- Add adaptive themes, keyboard-accessible tabs and details, and a per-widget Live display toggle.
+- Render rows and icons immediately with waiting dots; reserve price space and fit long values on narrow layouts.
+- Keep CryptoCompare USD charts independent of CoinLore metrics, including Litecoin.
+- Add localized price/FX failure messages and expand the website and widget to 14 languages.
+- Simplify website copy, remove the request to retain the attribution link, and improve mobile configuration controls. Attribution links themselves remain.
+- Update examples and distinguish hosted widget versions from WordPress plugin versions.
+
+Physical mobile devices, native Windows contrast themes and screen-reader acceptance are outside the completed local scope. A text equivalent for chart history remains deferred; no full WCAG conformance claim is made.
 
 ## 1.4.0 - 2026-06-10
 
