@@ -64,31 +64,7 @@ CO-IN.IO hosts the scripts. Kraken and CoinLore supply crypto prices, MoneyConve
 Place this snippet inside the page body.
 
 ```html
-<script>
-(function (anchor) {
-  var items = "BTC,ETH,LTC";
-  var base = "USD,EUR";
-  var loader = document.createElement("script");
-  loader.src = "https://co-in.io/widget/pricelist.js?items=" + encodeURIComponent(items);
-  loader.async = true;
-  loader.onload = function () {
-    var widget = crCryptocoinPriceWidget.init({
-      items: items,
-      base: base,
-      streaming: "1",
-      backgroundColor: "FFFFFF",
-      rounded: "1",
-      border: "1"
-    });
-    anchor.parentNode.insertBefore(widget, anchor);
-  };
-  loader.onerror = function () {
-    anchor.insertAdjacentText("beforebegin", "The crypto price widget could not load.");
-  };
-  anchor.parentNode.insertBefore(loader, anchor);
-})(document.currentScript);
-</script>
-<a href="https://currencyrate.today/">CurrencyRate.Today</a>
+<!-- Cryptocurrency Price Widget --><script>!function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({items:"BTC,ETH,BNB,DOGE,LTC",base:"USD,EUR,GBP,CNY",backgroundColor:"FFFFFF",streaming:"1",layout:"detailed",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CBNB%2CDOGE%2CLTC",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();</script><a href="https://currencyrate.today/" rel="noopener" target="_blank">CurrencyRate.Today</a><!-- /Cryptocurrency Price Widget -->
 ```
 
 </details>
@@ -99,31 +75,48 @@ Place this snippet inside the page body.
 Place this snippet inside the page body.
 
 ```html
+<!-- Crypto Ticker Widget -->
 <script>
 (function (anchor) {
-  var items = "BTC,ETH,LTC";
-  var base = "USD,EUR";
-  var loader = document.createElement("script");
-  loader.src = "https://co-in.io/widget/ticker.js?items=" + encodeURIComponent(items) + "&base=" + encodeURIComponent(base);
-  loader.async = true;
-  loader.onload = function () {
-    var widget = crCryptocoinTickerWidget.init({
-      items: items,
-      base: base,
-      streaming: "1",
-      position: "inline",
-      theme: "auto",
-      speed: "normal"
+  function mount(failed) {
+    if (!document.body) {
+      document.addEventListener("DOMContentLoaded", function () { mount(failed); }, {once:true});
+      return;
+    }
+    if (!document.documentElement.contains(anchor)) return;
+    if (anchor.parentNode === document.head) document.body.insertBefore(anchor, document.body.firstChild);
+    var widget = failed ? document.createElement("p") : crCryptocoinTickerWidget.init({
+      "items": "BTC,ETH,BNB,DOGE,LTC,XMR,DASH",
+      "base": "USD,EUR,GBP,CNY",
+      "position": "inline",
+      "theme": "light",
+      "speed": "normal",
+      "direction": "left",
+      "streaming": 1,
+      "streamingInterval": 30,
+      "pauseOnHover": true,
+      "paused": false,
+      "showIcons": true,
+      "showName": false,
+      "showChange": true,
+      "rounded": true,
+      "border": true,
+      "boxShadow": false,
+      "striped": false
     });
+    if (failed) widget.textContent = "Temporarily unavailable";
     anchor.parentNode.insertBefore(widget, anchor);
-  };
-  loader.onerror = function () {
-    anchor.insertAdjacentText("beforebegin", "The crypto ticker widget could not load.");
-  };
+  }
+  var loader = document.createElement("script");
+  loader.src = "https://co-in.io/widget/ticker.js?items=BTC%2CETH%2CBNB%2CDOGE%2CLTC%2CXMR%2CDASH&base=USD%2CEUR%2CGBP%2CCNY";
+  loader.async = true;
+  loader.onload = function () { mount(false); };
+  loader.onerror = function () { mount(true); };
   anchor.parentNode.insertBefore(loader, anchor);
 })(document.currentScript);
 </script>
-<a href="https://currencyrate.today/">CurrencyRate.Today</a>
+<a href="https://currencyrate.today/" target="_blank" rel="noopener">CurrencyRate.Today</a>
+<!-- /Crypto Ticker Widget -->
 ```
 
 </details>
