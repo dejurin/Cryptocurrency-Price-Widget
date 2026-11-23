@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="40" viewBox="0 0 180 40" role="img" aria-label="Build a price list">
+  <title>Build a price list</title>
+  <rect x=".5" y=".5" width="179" height="39" rx="8" fill="#0b6254" stroke="#ffffff" stroke-opacity=".35"/>
+  <g transform="translate(13 11)" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h15M2 9h10M2 15h13"/></g>
+  <text x="42" y="25.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="white">Build a price list</text>
+</svg>

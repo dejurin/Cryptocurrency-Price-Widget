@@ -1,131 +1,129 @@
-# Cryptocurrency Price Widget
+<h1 align="center">CO-IN.IO · Cryptocurrency Widgets</h1>
 
-> **1.5.0-rc.1 — development preview.** Try the isolated [dev site](https://dev.co-in.io/) and [dev widget builder](https://dev.co-in.io/crypto-price-widget/) in all 14 languages. The builder generates dev embed URLs. Existing production widgets are unchanged; the examples below continue to use the production service.
+<p align="center"><strong>Live crypto prices for the people who read your site. Since 2018.</strong></p>
 
-Add cryptocurrency prices to your website, choose coins and display currencies, and match the widget to your design. **No registration or API key required.**
+<p align="center">
+  <a href="https://co-in.io/crypto-price-widget/"><img src="assets/buttons/price.svg" alt="Build a price list"></a>
+  <a href="https://co-in.io/crypto-ticker-widget/"><img src="assets/buttons/ticker.svg" alt="Build a ticker"></a>
+</p>
 
-![Cryptocurrency Price Widget](./cryptocurrency-price-widget-anim.gif)
+<p align="center">
+  🌍 14 languages &nbsp;·&nbsp; 📦 <a href="https://wordpress.org/plugins/cryptocurrency-price-widget/advanced/">20,000+ WordPress plugin downloads</a> &nbsp;·&nbsp; 🏷️ <a href="CHANGELOG.md">Widget core 1.5.0</a>
+</p>
 
-## Features
+Writing about Ethereum? Give readers the price right beside the story. Running a news site? Let the market scroll across the masthead. **Both widgets are free. No registration or API key required.** Pick a design, change the coins and colors in the live preview, then paste one snippet into your page.
 
-- Cryptocurrency prices with automatic updates where supported.
-- Currency tabs, custom backgrounds, striped rows, borders and rounded corners.
-- Adaptive text contrast and keyboard controls for tabs and details.
-- A Live button that pauses displayed updates for each widget independently.
-- A one-shot mode for a single price snapshot.
-- Responsive layout and loading indicators that reserve space for prices.
-- Multiple widgets and compatibility with existing embed codes.
-- Fourteen interface languages in the release candidate.
-- Free use under the MIT license; no cryptocurrency mining.
+## 📊 The price list
 
-## Installation
+A two-coin watchlist fits beside a post. A detailed table gives a market roundup room for more. Readers can switch from dollars to euros in place, so the numbers make sense in the currency they use.
 
-Use the [widget builder](https://co-in.io/crypto-price-widget/) to choose settings and copy the code into an HTML block that permits JavaScript. The hosted builder currently serves the existing production version.
+[![Animated preview of the Cryptocurrency Price Widget](assets/promo/crypto-price-widget.gif)](https://co-in.io/crypto-price-widget/)
 
-See [embed examples](examples.html) or the [WordPress plugin](https://wordpress.org/plugins/cryptocurrency-price-widget/). The plugin has its own release number; 1.5.0-rc.1 here refers to the hosted widget candidate.
+## 🎞️ The scrolling ticker
 
-### Basic embed example
+Give prices a strip of their own. Tuck the ticker between stories or pin it above the headlines. Readers can pause on a coin and open its details. You choose the pace, direction and colors.
+
+[![Animated preview of the Crypto Ticker Widget](assets/promo/crypto-ticker-widget.gif)](https://co-in.io/crypto-ticker-widget/)
+
+## 💡 Borrow a layout
+
+| On your site | A good starting point |
+| --- | --- |
+| ✍️ **A personal finance blog** | Put BTC and ETH beside your latest post. The [compact sidebar watchlist](https://co-in.io/crypto-price-widget/#preset-sidebar) leaves the article itself free for reading. |
+| 📰 **A crypto newsroom** | Keep four market prices above the headlines as readers scroll. Try the [dark news ticker](https://co-in.io/crypto-ticker-widget/#preset-news). |
+| 🪙 **A stablecoin explainer** | Show USDT and USDC together so readers can compare their current prices in USD or EUR. Start with the [stablecoin table](https://co-in.io/crypto-price-widget/#preset-stablecoins). |
+| 📱 **A mobile market page** | Keep BTC and ETH in view while a reader moves down the page. The [bottom-edge ticker](https://co-in.io/crypto-ticker-widget/#preset-mobile) keeps the header clear. |
+
+Open a preset and make it yours in the builder. When the preview looks right, **copy the embed code** into an HTML block that accepts JavaScript. Want to see both widgets together? Open the [two-widget HTML example](examples.html).
+
+## 🔌 At home in WordPress
+
+Install **Cryptocurrency Price Widget**, add its block to a post, and choose your coins right in the editor. If you use the classic editor, the plugin also gives you a shortcode.
+
+[![Get the WordPress plugin](assets/buttons/wordpress.svg)](https://wordpress.org/plugins/cryptocurrency-price-widget/)
+
+## 🗓️ A little project history
+
+Our [first stable release](CHANGELOG.md) shipped on **September 19, 2018**. Today the same project offers two hosted widgets, and its price list is also available through WordPress.org, where the plugin has passed **[20,000 downloads](https://wordpress.org/plugins/cryptocurrency-price-widget/advanced/)**.
+
+## 💬 Tried it on your site?
+
+Tell us where you put it and how it felt to set up. A note like “the ticker fits under my mobile header” helps the next person choose a layout. Sign in on CO-IN.IO to leave a review.
+
+**[⭐ Review the price list](https://co-in.io/reviews/en/price/)** · **[⭐ Review the ticker](https://co-in.io/reviews/en/ticker/)**
+
+Something broken? [Open a GitHub issue](https://github.com/dejurin/Cryptocurrency-Price-Widget/issues) or [email us](mailto:s@co-in.io).
+
+## 🛠️ Under the hood
+
+CO-IN.IO hosts the scripts. Kraken and CoinLore supply crypto prices, MoneyConvert supplies fiat rates, and CryptoCompare supplies USD charts. Coverage varies by coin. The documentation and examples are available under the [MIT license](LICENSE).
+
+<details>
+<summary>Price list · copy the HTML example</summary>
+
+Place this snippet inside the page body.
 
 ```html
-<!-- Cryptocurrency Price Widget -->
 <script>
-!function(){
-  var scripts = document.getElementsByTagName("script"),
-      current = scripts[scripts.length - 1],
-      loader = document.createElement("script");
-
-  function render(){
+(function (anchor) {
+  var items = "BTC,ETH,LTC";
+  var base = "USD,EUR";
+  var loader = document.createElement("script");
+  loader.src = "https://co-in.io/widget/pricelist.js?items=" + encodeURIComponent(items);
+  loader.async = true;
+  loader.onload = function () {
     var widget = crCryptocoinPriceWidget.init({
-      base: "USD,EUR,CNY,GBP",
-      items: "BTC,ETH,LTC,XMR,DASH",
-      backgroundColor: "FFFFFF",
+      items: items,
+      base: base,
       streaming: "1",
-      streamingInterval: "30",
+      backgroundColor: "FFFFFF",
       rounded: "1",
-      boxShadow: "1",
       border: "1"
     });
-
-    current.parentNode.insertBefore(widget, current);
-  }
-
-  loader.src = "https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH";
-  loader.async = true;
-  loader.onload = render;
-
-  current.parentNode.insertBefore(loader, null);
-}();
+    anchor.parentNode.insertBefore(widget, anchor);
+  };
+  loader.onerror = function () {
+    anchor.insertAdjacentText("beforebegin", "The crypto price widget could not load.");
+  };
+  anchor.parentNode.insertBefore(loader, anchor);
+})(document.currentScript);
 </script>
-<!-- /Cryptocurrency Price Widget -->
+<a href="https://currencyrate.today/">CurrencyRate.Today</a>
 ```
 
-The example continues to use the production URL. For RC testing, generate a separate embed with the [dev builder](https://dev.co-in.io/crypto-price-widget/).
+</details>
 
-## Options
+<details>
+<summary>Scrolling ticker · copy the HTML example</summary>
 
-| Setting | Purpose |
-| --- | --- |
-| Display currencies | Fiat currencies shown in tabs |
-| Cryptocurrencies | Coins shown in rows |
-| Background color | Widget background and adaptive palette |
-| Automatic updates | Enable updates, or disable for one snapshot |
-| Striped rows | Alternate row backgrounds |
-| Rounded corners | Round the widget edges |
-| Shadow and border | Optional frame styling |
-
-## Languages in 1.5.0-rc.1
-
-English (`en`), Ukrainian (`uk`), Russian (`ru`), German (`de`), Spanish (`es`), French (`fr`), Portuguese (`pt`), Polish (`pl`), Italian (`it`), Turkish (`tr`), Dutch (`nl`), Japanese (`ja`), Korean (`ko`) and simplified Chinese (`zh-cn`). English uses the root URL; other languages use their locale prefix. All 14 locale routes are available on dev.co-in.io. This does not add or change routes on the production service.
-
-## Data sources and update behavior
-
-- **Kraken:** quotes for verified supported markets.
-- **CoinLore:** initial or alternative prices, market capitalization and volume.
-- **MoneyConvert:** fiat exchange rates.
-- **CryptoCompare:** separate charts in USD.
-
-Kraken streaming prices take priority where supported. If streaming fails, valid CoinLore data is used before Kraken REST. Litecoin uses Kraken because its known incorrect CoinLore mapping is excluded. Quote availability varies by asset; the [asset catalog](https://co-in.io/data/crypto-assets.json) is metadata, not a guarantee of an available price.
-
-Updates depend on provider events and availability, with no fixed trade-update interval. `streaming: "0"` loads one snapshot without starting polling. The Live button pauses display updates; provider connections continue.
-
-In the candidate, a price older than two minutes triggers streaming revalidation without hiding a valid displayed value. Exchange rates refresh separately after 30 minutes. A failed FX refresh retains the last valid snapshot and its original receipt time, shown in a tooltip. Receipt time is not market trade time.
-
-Rows and icons appear while prices are loading. If all price attempts fail, a localized message is shown; unavailable FX affects the corresponding currency tab. Charts remain independent of price and metric availability.
-
-This repository contains documentation and embed examples. Runtime is hosted by CO-IN.IO; existing embeds receive hosted updates subject to browser and CDN caching.
-
-## FAQ
-
-### How can I set the width?
-
-Place the embed inside a container, for example:
+Place this snippet inside the page body.
 
 ```html
-<div style="width: 320px; max-width: 100%;">
-  <!-- Insert widget script here. -->
-</div>
+<script>
+(function (anchor) {
+  var items = "BTC,ETH,LTC";
+  var base = "USD,EUR";
+  var loader = document.createElement("script");
+  loader.src = "https://co-in.io/widget/ticker.js?items=" + encodeURIComponent(items) + "&base=" + encodeURIComponent(base);
+  loader.async = true;
+  loader.onload = function () {
+    var widget = crCryptocoinTickerWidget.init({
+      items: items,
+      base: base,
+      streaming: "1",
+      position: "inline",
+      theme: "auto",
+      speed: "normal"
+    });
+    anchor.parentNode.insertBefore(widget, anchor);
+  };
+  loader.onerror = function () {
+    anchor.insertAdjacentText("beforebegin", "The crypto ticker widget could not load.");
+  };
+  anchor.parentNode.insertBefore(loader, anchor);
+})(document.currentScript);
+</script>
+<a href="https://currencyrate.today/">CurrencyRate.Today</a>
 ```
 
-Allow enough room for your selected currencies and values. At narrow widths, long prices use smaller text; check the result within your page layout.
-
-### Will the widget affect page performance?
-
-The widget loads JavaScript, images and market data in the visitor's browser. Check page performance with the number of widgets and coins you intend to display.
-
-### Does it mine cryptocurrency?
-
-No. The widget does not use visitors' devices to mine cryptocurrency.
-
-### Do I need an account or API key?
-
-No registration or API key is required to embed the widget.
-
-## Support
-
-Contact [s@co-in.io](mailto:s@co-in.io).
-
-## License
-
-Distributed under the [MIT license](https://choosealicense.com/licenses/mit/). You can use the widget for free on your websites.
-
-Powered by [CO-IN.IO](https://co-in.io/).
+</details>

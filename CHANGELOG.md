@@ -1,8 +1,15 @@
 # Changelog
 
+## 1.5.0 — Hosted widget core
+
+- Add Crypto Ticker Widget with inline, fixed-top and fixed-bottom placement, adjustable scrolling and theme controls.
+- Add compact and detailed price lists, currency tabs and per-widget controls for live updates.
+- Provide localized builders and widgets in 14 languages, with previews and ready-to-copy embed codes.
+- Document both production builders and add animated previews and a working two-widget HTML example.
+
 ## 1.5.0-rc.1 — Development preview
 
-This candidate is deployed to the isolated [dev environment](https://dev.co-in.io/), with all 14 site, builder and widget locales checked. Production has not been promoted and still serves the earlier Kraken, PHP parameter-protection and placement fixes. The changes below describe the dev candidate; a development-branch push does not update hosted widgets.
+This candidate was deployed to the isolated [dev environment](https://dev.co-in.io/), with all 14 site, builder and widget locales checked. At this stage, production still served the earlier Kraken, PHP parameter-protection and placement fixes. The changes below describe the dev candidate; a development-branch push does not update hosted widgets.
 
 - Retain valid displayed prices during two-minute streaming revalidation; keep one-shot mode free of new polling loops.
 - Preserve the last valid FX snapshot and receipt time when a refresh fails.

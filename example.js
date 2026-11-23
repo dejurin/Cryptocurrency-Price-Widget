@@ -1,23 +1,23 @@
-! function() {
-    var e = document.getElementsByTagName("script"),
-        t = e[e.length - 1],
-        n = document.createElement("script");
-
-    function r() {
-        var e = crCryptocoinPriceWidget.init({
-            base: "USD,EUR,CNY,GBP",
-            items: "BTC,ETH,LTC,XMR,DASH",
-            backgroundColor: "FFFFFF",
-            streaming: "1",
-            rounded: "1",
-            boxShadow: "1",
-            border: "1"
-        });
-        t.parentNode.insertBefore(e, t)
-    }
-    n.src = "https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH", n.async = !0, n.readyState ? n.onreadystatechange = function() {
-        "loaded" != n.readyState && "complete" != n.readyState || (n.onreadystatechange = null, r())
-    } : n.onload = function() {
-        r()
-    }, t.parentNode.insertBefore(n, null)
-}();
+// Load this script from the page body where the price list should appear.
+(function (anchor) {
+  var items = "BTC,ETH,LTC";
+  var base = "USD,EUR";
+  var loader = document.createElement("script");
+  loader.src = "https://co-in.io/widget/pricelist.js?items=" + encodeURIComponent(items);
+  loader.async = true;
+  loader.onload = function () {
+    var widget = crCryptocoinPriceWidget.init({
+      items: items,
+      base: base,
+      streaming: "1",
+      backgroundColor: "FFFFFF",
+      rounded: "1",
+      border: "1"
+    });
+    anchor.parentNode.insertBefore(widget, anchor);
+  };
+  loader.onerror = function () {
+    anchor.insertAdjacentText("beforebegin", "The crypto price widget could not load.");
+  };
+  anchor.parentNode.insertBefore(loader, anchor);
+})(document.currentScript);
