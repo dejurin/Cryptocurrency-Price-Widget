@@ -3,7 +3,7 @@
 ## 1.5.0 — Hosted widget core
 
 - Add Crypto Ticker Widget with inline, fixed-top and fixed-bottom placement, adjustable scrolling and theme controls.
-- Add compact and detailed price lists, currency tabs and per-widget controls for live updates.
+- Add compact and detailed price list layouts, keyboard navigation for currency tabs, and per-widget controls for live updates.
 - Provide localized builders and widgets in 14 languages, with previews and ready-to-copy embed codes.
 - Document both production builders and add animated previews and a working two-widget HTML example.
 

@@ -34,7 +34,7 @@ Give prices a strip of their own. Tuck the ticker between stories or pin it abov
 | 🪙 **A stablecoin explainer** | Show USDT and USDC together so readers can compare their current prices in USD or EUR. Start with the [stablecoin table](https://co-in.io/crypto-price-widget/#preset-stablecoins). |
 | 📱 **A mobile market page** | Keep BTC and ETH in view while a reader moves down the page. The [bottom-edge ticker](https://co-in.io/crypto-ticker-widget/#preset-mobile) keeps the header clear. |
 
-Open a preset and make it yours in the builder. When the preview looks right, **copy the embed code** into an HTML block that accepts JavaScript. Want to see both widgets together? Open the [two-widget HTML example](examples.html).
+Open a preset and make it yours in the builder. When the preview looks right, **copy the embed code** into an HTML block that accepts JavaScript. [View the example source](examples.html). To try both widgets together, download the repository and open `examples.html` in your browser.
 
 ## 🔌 At home in WordPress
 
